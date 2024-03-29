@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* TaskList component styles */
+
+.TaskList-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.TaskList-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tasklist {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #425568;
+}
+
+.TaskList {
+  margin-top: 20px;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+.TaskList th,
+.TaskList td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.Table-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.TaskList th {
+  background-color: #f2f2f2;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.priority {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.priorities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+}
+
+.update-btn {
+  background-color: #4caf50;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.update-btn:hover {
+  background-color: darkblue;
+}
+
+.TaskList .delete-btn {
+  background-color: #f44336;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: rgb(166, 9, 9);
+}
+
+.Form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid lightblue;
+  padding: 1rem;
+  gap: 1rem;
+  min-width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.Form-header {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+.Form-field {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.Form-field label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Form-field input {
+  width: 100%;
+  outline: none;
+  border: 1px solid lightblue;
+  background: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.Form-field select {
+  display: flex;
+  background: none;
+  border: 1px solid black;
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border-radius: 0.25rem;
+}
+.option {
+  display: flex;
+  background-color: none;
+  border: 1px solid black;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+  border-radius: 0.25rem;
+}
+
+.dropdown {
+  border: 1px solid rgb(81, 72, 72);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 26px;
+  right: -8px;
+  width: 5rem;
+  border-radius: 0.25rem;
+  z-index: 1;
+  background-color: lightgray;
+}
+
+.dropdown-option {
+  display: flex;
+  padding: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+}
