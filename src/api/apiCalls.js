@@ -1,6 +1,9 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://task-management-backend-mocha.vercel.app/api';
+const BASE_URL = 'https://task-management-lxmz.onrender.com';
+
+// BASE_URL for running locally
+// BASE_URL = http://localhost:5000
 
 const apiCalls = {
     // Fetch all tasks
